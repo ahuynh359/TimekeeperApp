@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Timekeeper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in_your_account">Sign In Your Account</string>
+    <string name="elevate_your_hr_management_with_talento">Elevate Your HR Management with Talento</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="log_in">Log in</string>
+</resources>
