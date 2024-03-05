@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/_24dp"
-    tools:context=".HomeFragment">
+    tools:context=".ui.home.HomeFragment">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imv_avatar"
@@ -14,5 +14,57 @@
         android:src="@drawable/img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:fontFamily="@font/bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_position"
+        android:layout_marginStart="@dimen/_10dp"
+        tools:text="Hồ Đức Nguyên"
+        android:text="Hồ Đức Nguyên"
+        app:layout_constraintTop_toTopOf="@id/imv_avatar"
+        app:layout_constraintStart_toEndOf="@+id/imv_avatar"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="Senior Backend"
+        android:textColor="@color/dove_gray"
+        app:layout_constraintBottom_toBottomOf="@id/imv_avatar"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        tools:text="Senior Backend"
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:background="@drawable/bg_notification"
+        android:src="@drawable/ic_bell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="@string/working_schedule"
+        app:layout_constraintTop_toBottomOf="@id/imv_avatar"
+        app:layout_constraintStart_toStartOf="@id/imv_avatar"
+        android:id="@+id/tv_schedule"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/item_date"
+        android:id="@+id/rcy_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_schedule"
+        app:layout_constraintStart_toStartOf="@id/imv_avatar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
