@@ -43,6 +43,8 @@ android {
 }
 
 dependencies {
+    //Circle Image
+    implementation (libs.circleimageview)
     //Navigation Graph
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)

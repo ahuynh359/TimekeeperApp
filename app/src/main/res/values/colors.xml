@@ -7,9 +7,11 @@
     <color name="solitude">#0057FF</color>
     <color name="guardsman_red">#D00D00</color>
     <color name="dusty_gray">#959595</color>
+    <color name="dove_gray">#959595</color>
     <color name="mercury">#E1E1E1</color>
     <color name="portage">#8F83F8</color>
     <color name="cornflower_blue">#695EF8</color>
+    <color name="fiord">#445668</color>
 
 
 </resources>

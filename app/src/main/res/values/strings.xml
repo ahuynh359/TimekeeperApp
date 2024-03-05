@@ -9,4 +9,8 @@
     <string name="welcome_back">Welcome Back!</string>
     <string name="forgot_password">Forgot Password ?</string>
     <string name="log_in">Log in</string>
+    <string name="notification">Notification</string>
+    <string name="home">Home</string>
+    <string name="time">Time</string>
+    <string name="setting">Setting</string>
 </resources>

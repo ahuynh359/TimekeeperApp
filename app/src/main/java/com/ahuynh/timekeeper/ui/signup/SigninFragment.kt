@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ahuynh.timekeeper.databinding.FragmentSigninBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SigninFragment : Fragment() {
     private var _binding: FragmentSigninBinding? = null
     private val binding get() = _binding!!
